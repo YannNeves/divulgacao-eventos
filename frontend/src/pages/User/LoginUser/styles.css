@@ -1,0 +1,146 @@
+#page-home  {
+  margin: 60px auto;
+  padding: 60px;
+
+  background: #FFF;
+  border-radius: 8px;
+
+  max-width: 600px;
+  max-height: 600px;
+  
+  display: flex;
+  flex-direction: column;
+}
+
+#page-home .content {
+  width: 100%;
+  height: 100%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 30px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#page-home .content header {
+  margin: 48px 0 0;
+}
+
+#page-home .content main {
+  flex: 1;
+  max-width: 560px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#page-home .content main h1 {
+  text-align: center;
+  font-size: 54px;
+  color: var(--title-color);
+}
+
+#page-home .content main p {
+  font-size: 24px;
+  margin-top: 24px;
+  line-height: 38px;
+}
+
+#page-home form button {
+  width: 100%;
+  max-width: 360px;
+  height: 72px;
+  background: var(--primary-color);
+  border-radius: 8px;
+  text-decoration: none;
+
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+
+  margin-top: 20px;
+}
+
+#page-home form button span {
+  display: block;
+  background: rgba(0, 0, 0, 0.08);
+  width: 72px;
+  height: 72px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+}
+
+#page-home form button span svg {
+  color: var(--title-color);
+  width: 20px;
+  height: 20px;
+}
+
+#page-home form button strong {
+  flex: 1;
+  text-align: center;
+  font-size: 15px;
+  color: var(--title-color);
+}
+
+#page-home form button:hover {
+  background: #2FB86E;
+}
+
+#page-home  form .field input[type=email],
+#page-home  form .field input[type=password] {
+  flex: 1;
+  background: #F0F0F5;
+  border-radius: 8px;
+  border: 2;
+  margin: 10px;
+  padding: 16px 24px;
+  font-size: 16px;
+  color: #6C6C80;
+}
+
+#page-home a {
+  padding: 15px;
+  color: var(--title-color);
+  font-weight: bold;
+  text-decoration: none;
+
+  display: flex;
+  align-items: center;
+  align-self: center;
+}
+
+#page-home a svg {
+  margin-right: 16px;
+  color: var(--primary-color);
+}
+
+@media(max-width: 900px) {
+  #page-home .content {
+    align-items: center;
+    text-align: center;
+  }
+
+  #page-home .content header {
+    margin: 48px auto 0;
+  }
+
+  #page-home .content main {
+    align-items: center;
+  }
+
+  #page-home .content main h1 {
+    font-size: 42px;
+  }
+
+  #page-home .content main p {
+    font-size: 24px;
+  }
+}
+
